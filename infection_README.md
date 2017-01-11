@@ -1,4 +1,5 @@
 # Project INFECTION
+
 This dir is infection repo.
 
 ## Назначение
@@ -24,6 +25,7 @@ This dir is infection repo.
    * **[info-sources]**  &ndash; каталог статей;
    * **[scripts]** &ndash; каталог скриптов (?);
 * **[testing]:**  &ndash; каталог для ведения описания подходов к тестированию геймплея и контента:
+   * **[testing_logs]**:  &ndash; логи тестирований карты с описаниями багов, замечаний, предложений;
    * **testing_arena.md** &ndash; описание механики Арены Тестирования;
    * **testing_a&e.md** &ndash; описание механики тестирования актов и событий;
 * **INFECTION.w3x** &ndash; последняя версия карты, находящаяся в разработке.
