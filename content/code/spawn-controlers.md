@@ -42,14 +42,16 @@
 * {Trig} Триггеры создающие юнита:
    * **Формат имени триггера**: `SpawnCreate*Имя фракции/субфракции*`;
    * **Переменные которые использует данный триггер**:
-      * CSpawn_random_type_of_unit;
-         * CSpawn_min_type_of_unit;
-         * CSpawn_max_type_of_unit;
-      * CSpawn_owner_of_unit;
-      * CSpawn_spawn_region:
-         * СSpawn_spawn_type;
-      * CSpawn_facing_region;
-      * CSpawn_current_spawn_group;
+      * CSpawn_random_type_of_unit &ndash; переменная в которой лежит сгенерированный рандомно тип юнита;
+      * CSpawn_array_unit_types &ndash; массив в котором хранятся текущие вероятности индексов типов юнитов спавна, вида [ 1 1 1 1 2 3 3 ]. Имеет размерность 50;
+         * CSpawn_min_type_of_unit &ndash; минимальное значение выборки из массива с вероятностями индексов типов юнитов;
+         * CSpawn_min_type_of_unit &ndash; максимальное значение выборки из массива с вероятностями индексов типов юнитов;
+         * CSpawn_real_length_spawn_array &ndash; реальная длинна массива с типами юнитов спавна;
+      * CSpawn_owner_of_unit &ndash; владелец юнитов спавна;
+      * CSpawn_spawn_region &ndash; регион для спавна;
+      * СSpawn_spawn_type &ndash; тип спавна (в центр региона, в рандомную точку);
+      * CSpawn_facing_region &ndash; регион к которому юниты спавна будут повёрнуты;
+      * CSpawn_current_group &ndash; группа спавна;
    * **Действия**:
       * **CSpawn_random_type_of_unit** = рандомное число из диапазона (**CSpawn_min_type_of_unit**, **CSpawn_max_type_of_unit**);
          * Замечание, выбирать рандомное число нужно не из диапазона, а из **массива с вероятностями спавна** вида [ 1 1 1 1 2 3 3 ]:
