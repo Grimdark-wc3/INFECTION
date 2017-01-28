@@ -53,8 +53,6 @@
    * **Действия**:
       * **CSpawn_random_type_of_unit** = рандомное число из диапазона (**CSpawn_min_type_of_unit**, **CSpawn_max_type_of_unit**);
          * Замечание, выбирать рандомное число нужно не из диапазона, а из **массива с вероятностями спавна** вида [ 1 1 1 1 2 3 3 ]:
-            * **Заполнение массива вероятностей**:
-               * отправляются 
       * Если **CSpawn_random_type_of_unit** = **const_spawn_index_type_of_unit**, то:
          * Если **CSpawn_spawn_type** = **const_spawn_...**, то:
             * В регионе **CSpawn_spawn_region** для игрока **CSpawn_owner_of_unit** спавнится юнит типа **const_spawn_index_type_of_unit**, в соответствии с **const_spawn_...**;
